@@ -1,40 +1,133 @@
 <!DOCTYPE html>
+
+<!--CSS styles-->
+<style>
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    padding: 40px 0;
+    margin: 0;
+    background: linear-gradient(150deg, #973939, #873131, #772a2a, #672222, #581b1b, #491414, #3c0d0d, #2f0505);
+    color: white;
+    font-family: "Poppins";
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .main-container {
+    max-width: 640px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid white;
+    padding: 25px;
+  }
+
+  .image-row {
+    text-align: center;
+  }
+
+  .avatar-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+  .name-row {
+    text-align: center;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .socials {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    padding-right: calc(15px + 36px);
+    box-shadow: 0px 16px 36px 0px rgba(0,0,0,0.75);
+  }
+
+  .link-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 36px;
+  }
+
+  .link-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+</style>
+
+<!--Page HTML-->
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zackery Bangs</title>
-    <link href="css/style" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <!--Font family, Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Font family, Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Font Awesome link for icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
   </head>
   
   <body>
-    <main-container>
-      <div class="image-row">
-        <img src="images/profilepic.jpg">
+    <div class="main-container">
+      <div class="profile-row">
+        <img class="avatar-image" src="/images/profilepic.jpg" alt="a photo of Zackery Bangs in front of Chicago's Cloud Gate monument">
       </div>
 
       <div class="name-row">
-        <h1>Zackery Bangs</h1>
+        <h2>Zackery Bangs</h2>
       </div>
 
-      <div class="socials-row">
-        <div class="icon">
-          <img src="images/insta.ico">
-        </div>
-        
-        <div class="icon">
-          <img src="images/twitter.3.ico">
-        </div>
-        
-        <div class="icon">
-          <img src="images/linkedin.ico">
-        </div>
+      <div class="socials">
+        <a href="https://github.com/zbangs/" target="_blank">
+          <i class="fa-brands fa-square-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/zackery-bangs" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://instagram.com/zackbangs_/" target="_blank">
+          <i class="fa-brands fa-square-instagram"></i> Instagram
+        </a>
+        <a href="https://x.com/zackerybangs" target="_blank">
+          <i class="fa-brands fa-square-x-twitter"></i> Twitter
+        </a>
       </div>
 
-      <div class="links-row">
-        <div class="url-link">
-          <a href="https://www.google.com">Google</a>
+      <div class="items-row">
+        <div class="item">
+          <img class="link-icon" src="/images/spotifyicon.png">
+          <a class="link-text" target="_blank" href="https://open.spotify.com/user/12140162362">My Spotify Playlists</a>
         </div>
       </div>
-    </main-container>
+    </dimain-container>
   </body>
 </html>
